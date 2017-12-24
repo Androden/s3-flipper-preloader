@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title PageTitle
+        link(rel="stylesheet" href='style/foundation.css')
+        link(rel="stylesheet" href='style/style.css')
+    body
+
+        .imgs
+            each i in [10,9,8,7,6,5,4,3,2,1]
+                img(src=`/images/mountains/l${i}.png`, alt="").imgs__img
+
+        .preloader#preloader
+            .preloader__spinner
+                .preloader__animation
+                .preloader__percent#preloader__percent 0%
+
+
+
+        script(src='js/foundation.js')
+        script(src='js/preloader.js')
